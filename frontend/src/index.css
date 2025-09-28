@@ -1,0 +1,21 @@
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #f9fafb; /* light gray background */
+  color: #1f2937; /* neutral text */
+  line-height: 1.6;
+}
+
+/* Root container */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Transitions */
+button, a {
+  transition: all 0.2s ease-in-out;
+}
