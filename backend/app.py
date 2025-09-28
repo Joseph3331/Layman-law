@@ -10,6 +10,8 @@ from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 from dotenv import load_dotenv
 
+from flask_cors import CORS
+CORS(app, origins=["https://layman-law.vercel.app"])
 # Load environment variables
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
 
