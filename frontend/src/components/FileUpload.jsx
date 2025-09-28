@@ -28,7 +28,7 @@ function FileUpload() {
     try {
       const formData = new FormData();
       formData.append("file", file);
-      const response = await fetch(`http://127.0.0.1:5000/${endpoint}`, {
+      const response = await fetch(`https://layman-law.onrender.com/${endpoint}`, {
         method: "POST",
         body: formData,
       });
